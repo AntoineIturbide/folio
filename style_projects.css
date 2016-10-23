@@ -1,0 +1,33 @@
+﻿/* RESOURCES */
+
+.project_flex{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding:4px;
+}
+
+.project_item{
+    background-color:aqua;
+    margin:4px;
+    transition: flex-grow 0.1s;
+    height:128px;
+    min-width: 256px;
+}
+.project_item.A{
+    flex-grow:4;
+}
+.project_item.B{
+    flex-grow:3 ;
+}
+.project_item.C{
+    flex-grow:2;
+}
+.project_item.D{
+    flex-grow:1;
+}
+
+.project_item:hover{
+    flex-grow:4;
+}

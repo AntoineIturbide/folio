@@ -1,0 +1,375 @@
+﻿/* RESOURCES */
+/* Font(s) */
+@import 'https://fonts.googleapis.com/css?family=Exo+2:300,300i,400,400i,800,800i';
+
+/* MAIN */
+body {
+    background: #5c5c5c;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Exo 2', sans-serif;
+    color: white;
+}
+
+table, table tr, table td {
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    text-indent:5px;
+}
+
+/* CUSTOM TAGS */
+space1 {
+    display: block;
+    height: 48px;
+}
+
+space2 {
+    display: block;
+    height: 8px;
+}
+
+line1 {
+    display: block;
+    border-top: solid 1px white;
+    width: 736px;
+    height: 0px;
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+/* GENERAL */
+.media_holder {
+    background: black;
+    position: relative;
+}
+
+
+.t0 {
+    font-size: 200%;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.t1 {
+    font-size: 200%;
+    font-weight: 800;
+    font-style: normal;
+}
+
+/* CENTRAL CONTAINER */
+.central_container {
+    width: auto;
+    position: relative;
+}
+
+/* PROJECT CONTAINER */
+.project_container {
+    background: rgba(44, 44, 44, 0.9);
+    width: 800px;
+    min-height: 780px;
+    margin: auto;
+    padding: 0px;
+    border-right: #b86800 1px solid;
+    border-left: #b86800 1px solid;
+    -moz-animation: BorderAnimation 60s linear infinite;
+    -o-animation: BorderAnimation 60s linear infinite;
+    -webkit-animation: BorderAnimation 60s linear infinite;
+    animation: BorderAnimation 60s linear infinite;
+    box-shadow: rgba(0,0,0,0.25) 0px 5px 4px;
+    position: relative;
+}
+
+.project_logo {
+    text-align: center;
+    font-style: italic;
+    font-size: 28px;
+}
+
+    .exaucer .project_logo {
+        background: url(logo_exaucer.png);
+    }
+    .falling_apart .project_logo {
+        background: url(logoFA.png) center;
+        background-size: cover;
+        transform:scale(1.2) translateX(36px);
+    }
+
+#project_pitch {
+    text-align: center;
+    font-style: italic;
+    font-size: 28px;
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+.project_info {
+    font-size: 16px;
+    width: 100%;
+    padding: 0px 32px 0px 32px;
+}
+
+    .project_info p {
+        text-indent: 5px;
+    }
+    .project_info tr {
+        vertical-align: top;
+    }
+
+/* PROJECT INFO CONTAINER */
+.note_container {
+    position: fixed;
+}
+
+.projectnote_container {
+    width: 336px;
+    min-height: 96px;
+    position: fixed;
+    top: 0px;
+    left: 50%;
+    padding: 32px 32px 32px 48px;
+    color: black;
+    /* Transition */
+    -moz-transition: transform 0.75s;
+    -o-transition: transform 0.75s;
+    -webkit-transition: transform 0.75s;
+    transition: transform 0.75s;
+    opacity: 0.75;
+    -moz-transform: translate(432px, 42px);
+    -ms-transform: translate(432px, 42px);
+    -o-transform: translate(432px, 42px);
+    -webkit-transform: translate(432px, 42px);
+    transform: translate(432px, 42px);
+}
+
+    .projectnote_container:hover {
+        -moz-transition: transform 0.2s;
+        -o-transition: transform 0.2s;
+        -webkit-transition: transform 0.2s;
+        transition: transform 0.2s;
+        opacity: 1.00;
+        -moz-transform: translate(416px, 42px);
+        -ms-transform: translate(416px, 42px);
+        -o-transform: translate(416px, 42px);
+        -webkit-transform: translate(416px, 42px);
+        transform: translate(416px, 42px);
+    }
+
+    .projectnote_container .info {
+        background: url("noteTitleBg.png") top left no-repeat, url("noteTitleBgShadow.png") top repeat-x, rgba(255,255,255,1); /*,  */
+        min-height: 26px;
+        position: relative;
+    }
+
+    .projectnote_container .name {
+        /* Font */
+        color: white;
+        font-size: 19px;
+        font-weight: 300;
+        font-style: italic;
+        /* Alignement */
+        display: inline-block;
+        width: 96px;
+        margin: 0px;
+        /* Positioning */
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        padding: 0px 5px 0px 5px;
+    }
+
+    .projectnote_container .content {
+        /* Font */
+        font-size: 16px;
+        font-weight: 300;
+        /* Alignement */
+        text-align: right;
+        padding: 2px 5px 2px 5px;
+        margin: 0px;
+    }
+
+        .projectnote_container .content.regular {
+            /* Alignement */
+            text-align: left;
+            text-indent: 5px;
+            /* Alignement */
+            padding: 8px 8px 0px 8px;
+        }
+
+@media screen and (max-width: 1696px) and (min-width: 1249px) {
+    body {
+    }
+
+    .central_container {
+        width: 1248px;
+        margin: auto;
+    }
+
+    .project_container {
+        margin: 0px;
+        -moz-transition: transform 0.5s;
+        -o-transition: transform 0.5s;
+        -webkit-transition: transform 0.5s;
+        transition: transform 0.5s;
+    }
+
+    .projectnote_container {
+        -moz-transform: translate(210px, 42px);
+        -ms-transform: translate(210px, 42px);
+        -o-transform: translate(210px, 42px);
+        -webkit-transform: translate(210px, 42px);
+        transform: translate(210px, 42px);
+    }
+
+        .projectnote_container:hover {
+            -moz-transform: translate(194px, 42px);
+            -ms-transform: translate(194px, 42px);
+            -o-transform: translate(194px, 42px);
+            -webkit-transform: translate(194px, 42px);
+            transform: translate(194px, 42px);
+        }
+}
+
+@media screen and (max-width: 1248px) {
+
+    .note_container {
+        position: static;
+    }
+
+    .projectnote_container {
+        /*display:none;*/
+        position: relative;
+        top: inherit;
+        left: 0px;
+        -moz-transform: translate(-32px, -16px);
+        -ms-transform: translate(-32px, -16px);
+        -o-transform: translate(-32px, -16px);
+        -webkit-transform: translate(-32px, -16px);
+        transform: translate(-32px, -16px);
+        width: 768px;
+        -moz-transition: none;
+        -o-transition: none;
+        -webkit-transition: none;
+        transition: none;
+        opacity: 1;
+        margin-bottom: 16px;
+    }
+
+        .projectnote_container:hover {
+            -moz-transform: translate(-32px, -16px);
+            -ms-transform: translate(-32px, -16px);
+            -o-transform: translate(-32px, -16px);
+            -webkit-transform: translate(-32px, -16px);
+            transform: translate(-32px, -16px);
+            -moz-transition: none;
+            -o-transition: none;
+            -webkit-transition: none;
+            transition: none;
+        }
+}
+
+/* BORDER ANIMATION */
+
+@-moz-keyframes BorderAnimation {
+    0% {
+        border-color: red;
+    }
+
+    14.3% {
+        border-color: orange;
+    }
+
+    28.6% {
+        border-color: yellow;
+    }
+
+    42.9% {
+        border-color: limegreen;
+    }
+
+    57.2% {
+        border-color: blue;
+    }
+
+    71.5% {
+        border-color: blueviolet;
+    }
+
+    85.8% {
+        border-color: violet;
+    }
+
+    100% {
+        border-color: red;
+    }
+}
+
+@-webkit-keyframes BorderAnimation {
+    0% {
+        border-color: red;
+    }
+
+    14.3% {
+        border-color: orange;
+    }
+
+    28.6% {
+        border-color: yellow;
+    }
+
+    42.9% {
+        border-color: limegreen;
+    }
+
+    57.2% {
+        border-color: dodgerblue;
+    }
+
+    71.5% {
+        border-color: indigo;
+    }
+
+    85.8% {
+        border-color: violet;
+    }
+
+    100% {
+        border-color: red;
+    }
+}
+
+@keyframes BorderAnimation {
+    0% {
+        border-color: red;
+    }
+
+    14.3% {
+        border-color: orange;
+    }
+
+    28.6% {
+        border-color: yellow;
+    }
+
+    42.9% {
+        border-color: limegreen;
+    }
+
+    57.2% {
+        border-color: dodgerblue;
+    }
+
+    71.5% {
+        border-color: indigo;
+    }
+
+    85.8% {
+        border-color: violet;
+    }
+
+    100% {
+        border-color: red;
+    }
+}
