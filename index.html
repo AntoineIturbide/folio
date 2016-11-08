@@ -5,187 +5,61 @@
     <meta charset="utf-8" />
     <title></title>
     <link rel="stylesheet" type="text/css" href="frontpage.css" />
-    <script src="note.js"></script>
+    <script src="project_display.js"></script>
 </head>
 <body>
     <!-- WIP -->
     <div style="background:red; position:fixed; z-index:1;">This website is a work in progress...</div>
-    <div class="central_container falling_apart" style="opacity:1; pointer-events:all; position:absolute; left:50%; transform:translateX(-50%)">
-
-        <!-- Main -->
-        <div class="main_container">
-            <!-- TOP -->
-            <div class="item myself">
-                <div class="name">Antoine Iturbide</div>
-                <div class="job">Technical Game Designer</div>
+    <!-- Main -->
+    <div class="main_container">
+        <!-- TOP -->
+        <div class="item myself">
+            <div class="name">Antoine Iturbide</div>
+            <div class="job">Technical Game Designer</div>
+        </div>
+        <div class="flex_space"></div>
+        <div class="item contact">
+            +33 6 04 17 05 34 <br />
+            antoine.iturbide@gmail.com <br />
+            twitter, github, linkdin, cv
+        </div>
+        <!-- SPETIALISATIONS -->
+        <div class="item" style="height:32px"></div>
+        <div class="item game_design selected">
+            <div>
+                Game Design
             </div>
-            <div class="flex_space"></div>
-            <div class="item contact">
-                +33 6 04 17 05 34 <br />
-                antoine.iturbide@gmail.com <br />
-                twitter, github, linkdin, cv
+        </div>
+        <div class="flex_space"></div>
+        <div class="item programming">
+            <div>
+                Programming
             </div>
-            <!-- SPETIALISATIONS -->
-            <div class="item" style="height:32px"></div>
-            <div class="item game_design selected">
-                <div>
-                    Game Design
-                </div>
+        </div>
+        <div class="flex_space"></div>
+        <div class="item ergonomics_ux">
+            <div>
+                Ergonomics / UX
             </div>
-            <div class="flex_space"></div>
-            <div class="item programming">
-                <div>
-                    Programming
-                </div>
-            </div>
-            <div class="flex_space"></div>
-            <div class="item ergonomics_ux">
-                <div>
-                    Ergonomics / UX
-                </div>
-            </div>
-            <!-- WORKS -->
-            <div class="item flex_space"></div>
-            <!-- Projects -->
-            <div class="item projects">
-                <div class="item personal_works">
-                    <div class="item header">
-                        Projects
-                    </div>
-                    <div class="item container">
-                        <!-- Work Vignette START -->
-                        <div class="item project_vignette gd pr er" style="background-image:url('https://static.wixstatic.com/media/05c5f6_89a5fd5bbb8d4d26ab40ffc929f7de72.jpg/v1/fill/w_1018,h_760,al_c,q_90,usm_0.66_1.00_0.01/05c5f6_89a5fd5bbb8d4d26ab40ffc929f7de72.jpg');">
-                            <div class="top">
-                                <!-- Title -->
-                                Falling Appart
-                            </div>
-                            <div class="bot">
-                                <!-- Info -->
-                                School Project
-                                <!-- Icons -->
-                                <div class="icons">
-                                    <div class="gd"></div>
-                                    <div class="pr"></div>
-                                    <div class="er"></div>
-                                </div>
-                            </div>  
-                        </div>
-                        <!-- Work Vignette END -->
-                        <!-- Work Vignette START -->
-                        <div class="item project_vignette pr"
-                             style="flex:6; background-image:url('https://static.wixstatic.com/media/05c5f6_89a5fd5bbb8d4d26ab40ffc929f7de72.jpg/v1/fill/w_1018,h_760,al_c,q_90,usm_0.66_1.00_0.01/05c5f6_89a5fd5bbb8d4d26ab40ffc929f7de72.jpg');">
-                            <div class="top">
-                                <!-- Title -->
-                                2D Multiplayer Platformer
-                            </div>
-                            <div class="bot">
-                                <!-- Info -->
-                                Internship
-                                <!-- Icons -->
-                                <div class="icons">
-                                    <div class="gd"></div>
-                                    <div class="pr"></div>
-                                    <div class="er"></div>
-                                </div>
-                            </div>  
-                        </div>
-                        <!-- Work Vignette END -->
-                        <div style="width:16px; flex:none;"></div>
-                        <!-- Work Vignette START -->
-                        <div class="item project_vignette gd er"
-                             style="flex:5; background-image:url('https://static.wixstatic.com/media/05c5f6_c17aebcb35984e02b83805457bd7a6e2.jpg/v1/fill/w_931,h_480,al_c,q_85,usm_0.66_1.00_0.01/05c5f6_c17aebcb35984e02b83805457bd7a6e2.jpg');">
-                            <div class="top">
-                                <!-- Title -->
-                                Ohayo
-                            </div>
-                            <div class="bot">
-                                <!-- Info -->
-                                Global Game Jam 2016
-                                <!-- Icons -->
-                                <div class="icons">
-                                    <div class="gd"></div>
-                                    <div class="pr"></div>
-                                    <div class="er"></div>
-                                </div>
-                            </div>  
-                        </div>
-                        <!-- Work Vignette END -->
-                        <!-- Work Vignette START -->
-                        <div class="item project_vignette gd pr er" style="background-image:url('https://static.wixstatic.com/media/05c5f6_c0b142e9e7e4423d801e3962c1d8d107.jpg/v1/fill/w_931,h_480,al_c,q_85,usm_0.66_1.00_0.01/05c5f6_c0b142e9e7e4423d801e3962c1d8d107.jpg');">
-                            <div class="top">
-                                <!-- Title -->
-                                Exaucer
-                            </div>
-                            <div class="bot">
-                                <!-- Info -->
-                                School Project
-                                <!-- Icons -->
-                                <div class="icons">
-                                    <div class="gd"></div>
-                                    <div class="pr"></div>
-                                    <div class="er"></div>
-                                </div>
-                            </div>  
-                        </div>
-                        <!-- Work Vignette END -->
-                        <!-- Work Vignette START -->
-                        <div class="item project_vignette pr"
-                             style="flex:1; background-image:url('https://static.wixstatic.com/media/05c5f6_89a5fd5bbb8d4d26ab40ffc929f7de72.jpg/v1/fill/w_1018,h_760,al_c,q_90,usm_0.66_1.00_0.01/05c5f6_89a5fd5bbb8d4d26ab40ffc929f7de72.jpg');">
-                            <div class="top">
-                                <!-- Title -->
-                                2D Multiplayer Platformer
-                            </div>
-                            <div class="bot">
-                                <!-- Info -->
-                                Internship
-                                <!-- Icons -->
-                                <div class="icons">
-                                    <div class="gd"></div>
-                                    <div class="pr"></div>
-                                    <div class="er"></div>
-                                </div>
-                            </div>  
-                        </div>
-                        <!-- Work Vignette END -->
-                        <div style="width:16px; flex:none;"></div>
-                        <!-- Work Vignette START -->
-                        <div class="item project_vignette gd er"
-                             style="flex:1; background-image:url('https://static.wixstatic.com/media/05c5f6_c17aebcb35984e02b83805457bd7a6e2.jpg/v1/fill/w_931,h_480,al_c,q_85,usm_0.66_1.00_0.01/05c5f6_c17aebcb35984e02b83805457bd7a6e2.jpg');">
-                            <div class="top">
-                                <!-- Title -->
-                                Ohayo
-                            </div>
-                            <div class="bot">
-                                <!-- Info -->
-                                Global Game Jam 2016
-                                <!-- Icons -->
-                                <div class="icons">
-                                    <div class="gd"></div>
-                                    <div class="pr"></div>
-                                    <div class="er"></div>
-                                </div>
-                            </div>  
-                        </div>
-                        <!-- Work Vignette END -->
-                    </div>
-                </div>
-            </div>
-            <div class="flex_space"></div>
-            <!-- Personal Works -->
+        </div>
+        <!-- WORKS -->
+        <div class="item flex_space"></div>
+        <!-- Projects -->
+        <div class="item projects">
             <div class="item personal_works">
                 <div class="item header">
-                    Personal Works
+                    Projects
                 </div>
                 <div class="item container">
                     <!-- Work Vignette START -->
-                    <div class="item project_vignette er" style="background-image:url('http://cdn.akamai.steamstatic.com/steam/apps/504370/header.jpg');">
+                    <div class="item project_vignette gd pr er" style="background-image:url('https://static.wixstatic.com/media/05c5f6_89a5fd5bbb8d4d26ab40ffc929f7de72.jpg/v1/fill/w_1018,h_760,al_c,q_90,usm_0.66_1.00_0.01/05c5f6_89a5fd5bbb8d4d26ab40ffc929f7de72.jpg');">
                         <div class="top">
                             <!-- Title -->
-                            Battlerite™, know your cooldowns
+                            Falling Appart
                         </div>
                         <div class="bot">
                             <!-- Info -->
-                            WIP
+                            School Project
                             <!-- Icons -->
                             <div class="icons">
                                 <div class="gd"></div>
@@ -196,13 +70,35 @@
                     </div>
                     <!-- Work Vignette END -->
                     <!-- Work Vignette START -->
-                    <div class="item project_vignette pr" style="background-image:url('https://static.wixstatic.com/media/05c5f6_eaca5de1646649aa9fd04edcae806878.jpg/v1/fill/w_1340,h_726,al_c,q_90,usm_0.66_1.00_0.01/05c5f6_eaca5de1646649aa9fd04edcae806878.jpg');">
+                    <div class="item project_vignette pr"
+                         style="flex:6; background-image:url('https://static.wixstatic.com/media/05c5f6_89a5fd5bbb8d4d26ab40ffc929f7de72.jpg/v1/fill/w_1018,h_760,al_c,q_90,usm_0.66_1.00_0.01/05c5f6_89a5fd5bbb8d4d26ab40ffc929f7de72.jpg');">
                         <div class="top">
                             <!-- Title -->
-                            Oceanhorn™ inspired mesh generator
+                            2D Multiplayer Platformer
                         </div>
                         <div class="bot">
                             <!-- Info -->
+                            Internship
+                            <!-- Icons -->
+                            <div class="icons">
+                                <div class="gd"></div>
+                                <div class="pr"></div>
+                                <div class="er"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Work Vignette END -->
+                    <div style="width:16px; flex:none;"></div>
+                    <!-- Work Vignette START -->
+                    <div class="item project_vignette gd er"
+                         style="flex:5; background-image:url('https://static.wixstatic.com/media/05c5f6_c17aebcb35984e02b83805457bd7a6e2.jpg/v1/fill/w_931,h_480,al_c,q_85,usm_0.66_1.00_0.01/05c5f6_c17aebcb35984e02b83805457bd7a6e2.jpg');">
+                        <div class="top">
+                            <!-- Title -->
+                            Ohayo
+                        </div>
+                        <div class="bot">
+                            <!-- Info -->
+                            Global Game Jam 2016
                             <!-- Icons -->
                             <div class="icons">
                                 <div class="gd"></div>
@@ -213,13 +109,72 @@
                     </div>
                     <!-- Work Vignette END -->
                     <!-- Work Vignette START -->
-                    <div class="item project_vignette pr" style="background-image:url('https://static.wixstatic.com/media/05c5f6_89a5fd5bbb8d4d26ab40ffc929f7de72.jpg/v1/fill/w_1018,h_760,al_c,q_90,usm_0.66_1.00_0.01/05c5f6_89a5fd5bbb8d4d26ab40ffc929f7de72.jpg');">
+                    <div class="item project_vignette gd pr er" style="background-image:url('https://static.wixstatic.com/media/05c5f6_c0b142e9e7e4423d801e3962c1d8d107.jpg/v1/fill/w_931,h_480,al_c,q_85,usm_0.66_1.00_0.01/05c5f6_c0b142e9e7e4423d801e3962c1d8d107.jpg');">
                         <div class="top">
                             <!-- Title -->
-                            C++ / SDL 2D physical engine
+                            Exaucer
                         </div>
                         <div class="bot">
                             <!-- Info -->
+                            School Project
+                            <!-- Icons -->
+                            <div class="icons">
+                                <div class="gd"></div>
+                                <div class="pr"></div>
+                                <div class="er"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Work Vignette END -->
+                    <!-- Work Vignette START -->
+                    <div class="item project_vignette gd pr er"
+                         style="flex:5; background-image:url('https://static.wixstatic.com/media/05c5f6_89a5fd5bbb8d4d26ab40ffc929f7de72.jpg/v1/fill/w_1018,h_760,al_c,q_90,usm_0.66_1.00_0.01/05c5f6_89a5fd5bbb8d4d26ab40ffc929f7de72.jpg');">
+                        <div class="top">
+                            <!-- Title -->
+                            Warwinkel
+                        </div>
+                        <div class="bot">
+                            <!-- Info -->
+                            School Project
+                            <!-- Icons -->
+                            <div class="icons">
+                                <div class="gd"></div>
+                                <div class="pr"></div>
+                                <div class="er"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Work Vignette END -->
+                    <div style="width:16px; flex:none;"></div>
+                    <!-- Work Vignette START -->
+                    <div class="item project_vignette gd pr"
+                         style="flex:6; background-image:url('https://static.wixstatic.com/media/05c5f6_c17aebcb35984e02b83805457bd7a6e2.jpg/v1/fill/w_931,h_480,al_c,q_85,usm_0.66_1.00_0.01/05c5f6_c17aebcb35984e02b83805457bd7a6e2.jpg');">
+                        <div class="top">
+                            <!-- Title -->
+                            Interdependance
+                        </div>
+                        <div class="bot">
+                            <!-- Info -->
+                            Windows 10 Game Jam
+                            <!-- Icons -->
+                            <div class="icons">
+                                <div class="gd"></div>
+                                <div class="pr"></div>
+                                <div class="er"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Work Vignette END -->
+                    <!-- Work Vignette START -->
+                    <div class="item project_vignette gd pr"
+                         style="background-image:url('https://static.wixstatic.com/media/05c5f6_c17aebcb35984e02b83805457bd7a6e2.jpg/v1/fill/w_931,h_480,al_c,q_85,usm_0.66_1.00_0.01/05c5f6_c17aebcb35984e02b83805457bd7a6e2.jpg');">
+                        <div class="top">
+                            <!-- Title -->
+                            Ultimate Bulwark
+                        </div>
+                        <div class="bot">
+                            <!-- Info -->
+                            School Project
                             <!-- Icons -->
                             <div class="icons">
                                 <div class="gd"></div>
@@ -232,5 +187,76 @@
                 </div>
             </div>
         </div>
+        <div class="flex_space"></div>
+        <!-- Personal Works -->
+        <div class="item personal_works">
+            <div class="item header">
+                Personal Works
+            </div>
+            <div class="item container">
+                <!-- Work Vignette START -->
+                <div class="item project_vignette er" style="background-image:url('http://cdn.akamai.steamstatic.com/steam/apps/504370/header.jpg');">
+                    <div class="top">
+                        <!-- Title -->
+                        Know your cooldowns in Battlerite™
+                    </div>
+                    <div class="bot">
+                        <!-- Info -->
+                        Signs & Feedbacks improvement proposition
+                        <!-- Icons -->
+                        <div class="icons">
+                            <div class="gd"></div>
+                            <div class="pr"></div>
+                            <div class="er"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Work Vignette END -->
+                <!-- Work Vignette START -->
+                <div class="item project_vignette pr" style="background-image:url('https://static.wixstatic.com/media/05c5f6_eaca5de1646649aa9fd04edcae806878.jpg/v1/fill/w_1340,h_726,al_c,q_90,usm_0.66_1.00_0.01/05c5f6_eaca5de1646649aa9fd04edcae806878.jpg');">
+                    <div class="top">
+                        <!-- Title -->
+                        Mesh generator inspired by Oceanhorn™
+                    </div>
+                    <div class="bot">
+                        <!-- Info -->
+                        Terrain editor in Unity3D
+                        <!-- Icons -->
+                        <div class="icons">
+                            <div class="gd"></div>
+                            <div class="pr"></div>
+                            <div class="er"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Work Vignette END -->
+                <!-- Work Vignette START -->
+                <div class="item project_vignette pr" style="background-image:url('https://static.wixstatic.com/media/05c5f6_89a5fd5bbb8d4d26ab40ffc929f7de72.jpg/v1/fill/w_1018,h_760,al_c,q_90,usm_0.66_1.00_0.01/05c5f6_89a5fd5bbb8d4d26ab40ffc929f7de72.jpg');">
+                    <div class="top">
+                        <!-- Title -->
+                        C++ / SDL 2D physical engine
+                    </div>
+                    <div class="bot">
+                        <!-- Info -->
+                        <!-- Icons -->
+                        <div class="icons">
+                            <div class="gd"></div>
+                            <div class="pr"></div>
+                            <div class="er"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Work Vignette END -->
+            </div>
+        </div>
+    </div>
+    <!-- Work Display -->
+    <div class="work_display">
+        <iframe class="work_display active" src="falling_appart.html" allowtransparency="true" frameBorder="0"></iframe>
+        <div class="left_exit"></div>
+        <div class="right_exit"></div>
+        <div class="main_exit"></div>
+    </div>
+
 </body>
 </html>

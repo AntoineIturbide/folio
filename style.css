@@ -4,11 +4,11 @@
 
 /* MAIN */
 body {
-    background: #5c5c5c;
     margin: 0px;
     padding: 0px;
     font-family: 'Exo 2', sans-serif;
     color: white;
+    padding-left:17px;
 }
 
 table, table tr, table td {
