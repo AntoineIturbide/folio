@@ -1,0 +1,411 @@
+﻿/* RESOURCES */
+/* Font(s) */
+@import 'https://fonts.googleapis.com/css?family=Exo+2:300,300i,400,400i,800,800i';
+
+/* MAIN */
+body {
+    background: #5c5c5c;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Exo 2', sans-serif;
+    color: black;
+}
+
+table, table tr, table td {
+    margin: 0px;
+    padding: 0px;
+}
+
+p {
+    text-indent: 5px;
+}
+
+
+.main_container {
+    width: 800px;
+    min-height: 780px;
+    padding: 32px;
+    background: rgba(255, 255, 255, 0.9);
+    border-right: #b86800 1px solid;
+    border-left: #b86800 1px solid;
+    -moz-animation: BorderAnimation 60s linear infinite;
+    -o-animation: BorderAnimation 60s linear infinite;
+    -webkit-animation: BorderAnimation 60s linear infinite;
+    animation: BorderAnimation 60s linear infinite;
+    /* FLEX */
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    -ms-align-content: flex-start;
+    -webkit-align-content: flex-start;
+    align-content: flex-start;
+}
+
+.item {
+    -ms-flex: 1 100%;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+    min-width: 32px;
+    min-height: 32px;
+}
+
+.flex_space {
+    width: 32px;
+    height: 32px;
+}
+
+.myself {
+    -ms-flex: 3 auto;
+    -webkit-flex: 3 auto;
+    flex: 3 auto;
+    font-size: 32px;
+}
+
+    .myself .name {
+        font-weight: 800;
+    }
+
+    .myself .job {
+        font-weight: 300;
+    }
+
+.contact {
+    -ms-flex: 1 auto;
+    -webkit-flex: 1 auto;
+    flex: 1 auto;
+    text-align: right;
+}
+
+.game_design,
+.programming,
+.ergonomics_ux {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: italic;
+    min-height: 64px;
+    display: grid;
+    position: relative;
+    cursor:pointer;
+}
+
+    .game_design:hover,
+    .programming:hover,
+    .ergonomics_ux:hover {
+        filter: grayscale(50%);
+    }
+
+    .game_design div,
+    .programming div,
+    .ergonomics_ux div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 50%;
+        width: 100%;
+        margin: -6% 0 0 -50%;
+    }
+
+.game_design {
+    -ms-flex: 1 auto;
+    -webkit-flex: 1 auto;
+    flex: 1 auto;
+    background: #E943FF;
+}
+
+.programming {
+    -ms-flex: 1 auto;
+    -webkit-flex: 1 auto;
+    flex: 1 auto;
+    background: #3691FF;
+}
+
+.ergonomics_ux {
+    -ms-flex: 1 auto;
+    -webkit-flex: 1 auto;
+    flex: 1 auto;
+    background: #FF8036;
+}
+
+.projects,
+.personal_works{
+    background: rgba(0,0,0,0.1);
+}
+
+.projects {
+    -ms-flex: 3;
+    -webkit-flex: 3;
+    flex: 3;
+    /* FLEX */
+    padding: 0px;
+    display: inline-flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    -ms-align-content: flex-start;
+    -webkit-align-content: flex-start;
+    align-content: flex-start;
+}
+
+.personal_works {
+    -ms-flex: 2;
+    -webkit-flex: 2;
+    flex: 2;
+    /* FLEX */
+    padding: 0px;
+    display: inline-flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    -ms-align-content: flex-start;
+    -webkit-align-content: flex-start;
+    align-content: flex-start;
+}
+
+    .projects .header,
+    .personal_works .header {
+        background: rgba(0,0,0,0.90);
+        color: white;
+        text-align: center;
+        font-size: 24px;
+        font-weight: 800;
+        min-height: 32px;
+    }
+
+    .projects .container,
+    .personal_works .container {
+        -ms-flex: 2;
+        -webkit-flex: 2;
+        flex: 2;
+        /* FLEX */
+        padding: 16px 32px 32px 32px;
+        display: flex;
+        -ms-flex-direction: row;
+        -webkit-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        -ms-align-content: flex-start;
+        -webkit-align-content: flex-start;
+        align-content: flex-start;
+    }
+
+/* PROJECT VIGNETTE */
+.project_vignette {
+    margin-top:16px;
+    border: 4px black solid;
+    min-height: 96px;
+    background-position: center center;
+    background-size: cover;
+    cursor:pointer;
+    position:relative;
+    /* Transition */
+    -moz-transition: all 0.15s;
+    -o-transition: all 0.15s;
+    -webkit-transition: all 0.15s;
+    transition: all 0.15s;
+    /* FLEX */
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    -ms-align-content: space-between;
+    -webkit-align-content: space-between;
+    align-content: space-between;
+}
+
+    .project_vignette:hover {
+        /* transform:scale(1.05,1.05); */
+        border: 4px white solid;
+        z-index: 2;
+    }
+
+    .project_vignette .top,
+    .project_vignette .bot {
+        max-height: 16px;
+        padding-left: 4px;
+        background: rgba(0,0,0,0.66);
+        font-size: 12px;
+        color: white;
+        /* Transition */
+        -moz-transition: all 0.15s;
+        -o-transition: all 0.15s;
+        -webkit-transition: all 0.15s;
+        transition: all 0.15s;
+        /* FLEX */
+        -ms-flex: 1 100%;
+        -webkit-flex: 1 100%;
+        flex: 1 100%;
+    }
+
+    .project_vignette:hover .top,
+    .project_vignette:hover .bot {
+        background: rgba(255,255,255,0.75);
+        color: black;
+    }
+
+    .project_vignette .bot {
+        font-size: 9px;
+        height:8px;
+    }
+
+    .icons {
+        position: absolute;
+        bottom: 1px; right:8px;
+        font-size:8px;
+    }
+
+    .icons .gd,
+    .icons .pr,
+    .icons .er {
+        display:inline-block;
+        width: 8px;
+        height: 8px;
+        border: solid 1px black;
+        background-color:red;
+        filter: grayscale(100%);
+        opacity:0.5;
+    }
+
+    .gd .icons .gd,
+    .pr .icons .pr,
+    .er .icons .er {
+        filter: grayscale(0%);
+        opacity:1;
+    }
+    
+    .icons .gd {
+        background-color:#E943FF;
+    }
+    
+    .icons .pr {
+        background-color:#3691FF;
+    }
+
+    .icons .er {
+        background-color:#FF8036;
+    }
+
+/* BORDER ANIMATION */
+
+@-moz-keyframes BorderAnimation {
+    0% {
+        border-color: red;
+    }
+
+    14.3% {
+        border-color: orange;
+    }
+
+    28.6% {
+        border-color: yellow;
+    }
+
+    42.9% {
+        border-color: limegreen;
+    }
+
+    57.2% {
+        border-color: blue;
+    }
+
+    71.5% {
+        border-color: blueviolet;
+    }
+
+    85.8% {
+        border-color: violet;
+    }
+
+    100% {
+        border-color: red;
+    }
+}
+
+@-webkit-keyframes BorderAnimation {
+    0% {
+        border-color: red;
+    }
+
+    14.3% {
+        border-color: orange;
+    }
+
+    28.6% {
+        border-color: yellow;
+    }
+
+    42.9% {
+        border-color: limegreen;
+    }
+
+    57.2% {
+        border-color: dodgerblue;
+    }
+
+    71.5% {
+        border-color: indigo;
+    }
+
+    85.8% {
+        border-color: violet;
+    }
+
+    100% {
+        border-color: red;
+    }
+}
+
+@keyframes BorderAnimation {
+    0% {
+        border-color: red;
+    }
+
+    14.3% {
+        border-color: orange;
+    }
+
+    28.6% {
+        border-color: yellow;
+    }
+
+    42.9% {
+        border-color: limegreen;
+    }
+
+    57.2% {
+        border-color: dodgerblue;
+    }
+
+    71.5% {
+        border-color: indigo;
+    }
+
+    85.8% {
+        border-color: violet;
+    }
+
+    100% {
+        border-color: red;
+    }
+}
