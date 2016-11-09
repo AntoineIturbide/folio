@@ -25,23 +25,26 @@
         </div>
         <!-- SPETIALISATIONS -->
         <div class="item" style="height:32px"></div>
-        <div class="item game_design selected">
+        <div id="gd_filter" class="item game_design selected">
             <div>
                 Game Design
             </div>
         </div>
         <div class="flex_space"></div>
-        <div class="item programming">
+        <div id="pr_filter" class="item programming selected">
             <div>
                 Programming
             </div>
         </div>
         <div class="flex_space"></div>
-        <div class="item ergonomics_ux">
+        <div id="er_filter" class="item ergonomics_ux selected">
             <div>
                 Ergonomics / UX
             </div>
         </div>
+        <script>
+            BindFilterInput();
+        </script>
         <!-- WORKS -->
         <div class="item flex_space"></div>
         <!-- Projects -->

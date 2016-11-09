@@ -94,12 +94,25 @@ p {
     display: grid;
     position: relative;
     cursor:pointer;
+    filter: grayscale(100%);
 }
 
-    .game_design:hover,
-    .programming:hover,
-    .ergonomics_ux:hover {
-        filter: grayscale(50%);
+    .game_design:not(.selected):hover,
+    .programming:not(.selected):hover,
+    .ergonomics_ux:not(.selected):hover {
+        filter: grayscale(75%);
+    }
+    
+    .game_design.selected,
+    .programming.selected,
+    .ergonomics_ux.selected {
+        filter: grayscale(0%);
+    }
+
+    .game_design.selected:hover,
+    .programming.selected:hover,
+    .ergonomics_ux.selected:hover {
+        filter: grayscale(25%);
     }
 
     .game_design div,
@@ -243,6 +256,11 @@ p {
         -o-transition: all 0s;
         -webkit-transition: all 0s;
         transition: all 0s;
+    }
+
+    .project_vignette.inactive{
+        filter: grayscale(100%);
+        opacity: 0.5;
     }
 
     .project_vignette .top,
