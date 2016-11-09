@@ -71,3 +71,42 @@ function BindFilterInput() {
     prFilter.addEventListener("click", FlipPr);
     erFilter.addEventListener("click", FlipEr);
 }
+
+function OpenProject(vignette) {
+    var url = vignette.getAttribute("link");
+    if (url == "" || url == null || url == "null") {
+        CloseProject();
+        return;
+    }
+    var workDisplay = document.querySelector(".work_display");
+    var iframe = document.querySelector(".work_display iframe");
+    iframe.src = url;
+    workDisplay.classList.add("active");
+}
+
+function CloseProject() {
+    var workDisplay = document.querySelector(".work_display");
+    var iframe = document.querySelector(".work_display iframe");
+    iframe.src = "";
+    workDisplay.classList.remove("active");
+}
+
+function BindIframeExit() {
+    var iframe = document.querySelector(".work_display iframe");
+    var innerDoc = iframe.contentDocument || iframe.contentWindow.document;
+    innerDoc.getElementById("exit").addEventListener("click", CloseProject);
+}
+
+function BindProjectDisplay() {
+    var vignettes = document.querySelectorAll('.project_vignette');
+    for (var i = 0; i < vignettes.length; ++i) {
+        vignettes[i].addEventListener(
+            "click",
+            function () {
+                OpenProject(this);
+            }
+        );
+    }
+    var iframe = document.querySelector(".work_display iframe");
+    iframe.addEventListener("load", BindIframeExit);
+}

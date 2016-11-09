@@ -67,7 +67,7 @@ line1 {
 
 /* PROJECT CONTAINER */
 .project_container {
-    background: rgba(44, 44, 44, 0.9);
+    background: rgba(44, 44, 44, 1);
     width: 800px;
     min-height: 780px;
     margin: auto;

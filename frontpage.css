@@ -372,6 +372,7 @@ p {
 
 .work_display.active{
     display:block;
+    z-index:5;
 }
 
 .work_display iframe {
