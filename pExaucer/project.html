@@ -1,0 +1,150 @@
+﻿    <!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <base href="file:///D:/GitHub/folio/" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="note.js"></script> 
+</head>
+<body>
+    <!-- EXAUCER -->
+    <div id="exit" style="position:fixed; width:100%; height:100%;"></div>
+    <!-- FALLING APART -->
+    <!-- Main -->
+    <div class="project_container exaucer">
+        <space1></space1>
+        <!-- Logo -->
+        <div class="project_logo" style="width: 800px; height: 439px;"></div>
+        <space1></space1>
+        <!-- Pitch -->
+        <div id="project_pitch">
+            Exaucer is a 2D platformer using angry birds like controls to make units climb a procedurally generated tree.
+        </div>
+        <space1></space1>
+        <!-- Note -->
+        <div class="note_container">
+            <div class="projectnote_container">
+                <div class="info">
+                    <span class="name">
+                        Duration
+                    </span>
+                    <p class="content">
+                        3 months (2014)
+                    </p>
+                </div>
+                <space2></space2>
+                <div class="info">
+                    <span class="name">
+                        Team
+                    </span>
+                    <p class="content">
+                        4 people
+                    </p>
+                </div>
+                <space2></space2>
+                <div class="info">
+                    <span class="name">
+                        My roles
+                    </span>
+                    <p class="content">
+                        Game Designer
+                        <br />
+                        Programmer
+                        <br />
+                        Art Director
+                    </p>
+                </div>
+                <space2></space2>
+                <div class="info" style="padding-bottom:8px;">
+                    <span class="name">
+                        Context
+                    </span>
+                    <p class="content">
+                        School project
+                    </p>
+                    <p class="content regular">
+                        Exaucer is a sandbox experience where no goals are fixed by the game.
+                    </p>
+                    <p class="content regular">
+                        As a school project the game had to respect the folowing theme :
+                    </p>
+                    <div style="text-align:center; margin-top:8px;">
+                        <ruby style="ruby-position:under; font-size: 24px; padding-top:4px;">
+                            « Escalade » <rt> Escalation </rt>
+                        </ruby>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Intro media -->
+        <div class="media_holder" style="width:736px; height:456px; margin-left:32px; margin-right:32px;">
+
+        </div>
+        <space1></space1>
+        <line1></line1>
+        <space1></space1>
+        <!-- Climbing -->
+        <!-- #region Climbing -->
+        <table class="project_info" cellpadding="0" cellspacing="0">
+            <tr>
+                <td style="padding-right:16px;">
+                    <span class="t1">
+                        Climbing
+                    </span>
+                    <p>
+                        The player can make units climb branches by using a slingshot like input. (Similar to bird throwing in Angry Birds.)
+                    </p>
+                    <p>
+                        Once thrown, units are then cached by cotton holds scattered onto the tree.
+                    </p>
+                </td>
+                <td class="media_holder" style="width:352px"></td>
+            </tr>
+        </table>
+        <!-- #endregion Climbing -->
+        <space1></space1>
+        <!-- Tree Generation -->
+        <!-- #region Treegen -->
+        <table class="project_info" cellpadding="0" cellspacing="0">
+            <tr>
+                <td class="media_holder" style="width:352px"></td>
+                <td style="padding-left:16px;">
+                    <span class="t1">
+                        Tree generation
+                    </span>
+                    <p>
+                        The “level” grows as the player climbs onto the tree.
+                    </p>
+                    <p>
+                        New branches, full of climbing holds nodes, are generated depending on which direction the player is taking.
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <!-- #endregion Treegen -->
+        <space1></space1>
+        <!-- Units Behaviour -->
+        <!-- #region Behaviour -->
+        <table class="project_info" cellpadding="0" cellspacing="0">
+            <tr>
+                <td style="padding-right:16px;">
+                    <span class="t1">
+                        Units behaviour
+                    </span>
+                    <p>
+                        When jumping from a node to another, units unwind a cotton string, linking both nodes.
+                    </p>
+                    <p>
+                        Other units will follow the string to reach their siblings, making their small bells ring throughout the trip.
+                    </p>
+                </td>
+                <td class="media_holder" style="width:352px"></td>
+            </tr>
+        </table>
+        <!-- #endregion Behaviour -->
+        <space1></space1>
+    </div>
+</body>
+</html>

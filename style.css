@@ -44,6 +44,7 @@ line1 {
 .media_holder {
     background: black;
     position: relative;
+    background-size:cover;
 }
 
 
@@ -86,15 +87,21 @@ line1 {
     text-align: center;
     font-style: italic;
     font-size: 28px;
+    margin:auto;
 }
 
-    .exaucer .project_logo {
-        background: url(logo_exaucer.png);
-    }
     .falling_apart .project_logo {
         background: url(logoFA.png) center;
         background-size: cover;
         transform:scale(1.2) translateX(36px);
+    }
+    .exaucer .project_logo {
+        background: url(logo_exaucer.png);
+    }
+    .ohayo .project_logo {
+        background: url(pOhayo/ohayo.png);
+        background-size:cover;
+        background-position: center center;
     }
 
 #project_pitch {

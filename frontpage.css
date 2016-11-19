@@ -5,6 +5,7 @@
 /* MAIN */
 body {
     background: #5c5c5c;
+    background:url('background.png') center,  #5c5c5c;
     margin: 0px;
     padding: 0px;
     font-family: 'Exo 2', sans-serif;
@@ -23,10 +24,11 @@ p {
 
 .main_container {
     width: 800px;
+    min-height: 94vh;
     overflow: hidden;
     padding: 32px;
     margin: auto;
-    background: rgba(255, 255, 255, 0.9);
+    background: rgba(255, 255, 255, 1.0);
     border-right: #b86800 1px solid;
     border-left: #b86800 1px solid;
     -moz-animation: BorderAnimation 60s linear infinite;
@@ -364,6 +366,10 @@ p {
 
 .icons .er {
     background-color: #FF8036;
+}
+
+.footer {
+    text-align:center;
 }
 
 
