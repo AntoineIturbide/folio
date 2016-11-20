@@ -1,0 +1,205 @@
+﻿    <!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="note.js"></script> 
+</head>
+<body>
+    <!-- EXAUCER -->
+    <div id="exit" style="position:fixed; width:100%; height:100%;"></div>
+    <!-- FALLING APART -->
+    <!-- Main -->
+    <div class="project_container">
+        <space1></space1>
+        <!-- Logo -->
+        <div class="project_logo" style="width: 800px; height: 128px; background:url('p2dPltfInternship/dev.png') center center no-repeat; background-size:cover;"></div>
+        <space1></space1>
+        <!-- Pitch -->
+        <div id="project_pitch">
+            Interdépendance is a cooperative<br />
+            two player survival game.
+        </div>
+        <space1></space1>
+        <!-- Note -->
+        <div class="note_container">
+            <div class="projectnote_container">
+                <div class="info">
+                    <span class="name">
+                        Platform
+                    </span>
+                    <p class="content">
+                        Windows 10 (PC, Xbox One) <br />
+                    </p>
+                </div>
+                <space2></space2>
+                <div class="info">
+                    <span class="name">
+                        Tool used
+                    </span>
+                    <p class="content">
+                        Unity3D<br />
+                    </p>
+                </div>
+                <space2></space2>
+                <div class="info">
+                    <span class="name">
+                        Duration
+                    </span>
+                    <p class="content">
+                        2 days (2015)
+                    </p>
+                </div>
+                <space2></space2>
+                <div class="info">
+                    <span class="name">
+                        Team size
+                    </span>
+                    <p class="content">
+                        3 people
+                    </p>
+                </div>
+                <space2></space2>
+                <div class="info">
+                    <span class="name">
+                        My roles
+                    </span>
+                    <p class="content">
+                        Game Designer<br />
+                        Programmer
+                    </p>
+                </div>
+                <space2></space2>
+                <div class="info" style="padding-bottom:8px;">
+                    <span class="name">
+                        Context
+                    </span>
+                    <p class="content">
+                        Windows 10 Game Jam
+                    </p>
+                    <p class="content regular">
+                        As a submitiont to the Windows 10 Game Jam, the game had to respect the folowing theme :
+                    </p>
+                    <div style="text-align:center; margin-top:8px;">
+                        <ruby style="ruby-position:under; font-size: 24px; padding-top:4px;">
+                            « Ritual » <rt>  </rt>
+                        </ruby>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Intro media -->
+        <div class="media_holder" style="width:736px; height:456px; margin-left:32px; margin-right:32px;">
+
+        </div>
+        <space1></space1>
+        <line1></line1>
+        <div style="background:rgba(0,0,0,0.25); padding-left:32px; padding-right:32px; text-align:center;">
+            <space1></space1>
+            <div style="font-size:150%;">
+                <span class="t0">
+                    Gameplay
+                </span>
+                <p>
+                    You play as two pirates gone for a crazy adventure.<br />
+                    With their unstable boat they must face deadly birds, lizard mens, icebergs and tsunamis.
+                </p>
+            </div>
+            <space1></space1>
+        </div>
+        <space1></space1>
+        <!-- Climbing -->
+        <!-- #region Climbing -->
+        <table class="project_info" cellpadding="0" cellspacing="0">
+            <tr>
+                <td style="padding-right:16px;">
+                    <span class="t1">
+                        Rendering pixel-art
+                    </span>
+                    <p>
+                        The game world is based on tilesets, I had to find a system where those graphics were to be efficiently rendered.
+                    </p>
+                    <p>
+                        I made a pixel perfect, mesh based, tile layer renderer.
+                    </p>
+                    <p>
+                        With that were somme useful optimisation additions, like single drawcall rendering, screen based occlusion culling and tileset batching.
+                    </p>
+                </td>
+                <td class="media_holder" style="width:352px; background:url('p2dPltfInternship/graphics.png') center center no-repeat; background-size:contain;"></td>
+            </tr>
+        </table>
+        <!-- #endregion Climbing -->
+        <space1></space1>
+        <!-- Tree Generation -->
+        <!-- #region Treegen -->
+        <table class="project_info" cellpadding="0" cellspacing="0">
+            <tr>
+                <td class="media_holder" style="width:352px; background:url('p2dPltfInternship/controller.png') center center no-repeat; background-size:contain;"></td>
+                <td style="padding-left:16px;">
+                    <span class="t1">
+                        Platformer controller
+                    </span>
+                    <p>
+                        The gameplay was inspired by games like Super Meat Boy and Bloody Trapland.
+                    </p>
+                    <p>
+                        I had to program a controller that would fit the designer’s expectations.
+                    </p>
+                    <p>
+                        After that we had the artist make the various animations and graphic effects that I implemented within the game.
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <!-- #endregion Treegen -->
+        <space1></space1>
+        <!-- Units Behaviour -->
+        <!-- #region Behaviour -->
+        <table class="project_info" cellpadding="0" cellspacing="0">
+            <tr>
+                <td style="padding-right:16px;">
+                    <span class="t1">
+                        Online multiplayer
+                    </span>
+                    <p>
+                        I made an online mode prototype where one player could host a game and another could join it by entering the host’s IP address.
+                    </p>
+                    <p>
+                        Events of the game are to be correctly called on both host and client side.
+                    </p>
+                    <p>
+                        Also, I set-up prediction in many parts of the game to smooth out the experience.
+                    </p>
+                </td>
+                <td class="media_holder" style="width:352px"></td>
+            </tr>
+        </table>
+        <!-- #endregion Behaviour -->
+        <space1></space1>
+        <!-- Tree Generation -->
+        <!-- #region Treegen -->
+        <table class="project_info" cellpadding="0" cellspacing="0">
+            <tr>
+                <td class="media_holder" style="width:352px; background:url('p2dPltfInternship/editor.png') center center no-repeat; background-size:contain;"></td>
+                <td style="padding-left:16px;">
+                    <span class="t1">
+                        Level editor
+                    </span>
+                    <p>
+                        I talked with the team about the constraints of public level editor and how it has to impact the art direction.
+                        Once my feedback was taken in, I started making the level editor.
+                    </p>
+                    <p>
+                        In the end I was able to allow an easy edition of level walls, traps and object within the game engine itself.
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <!-- #endregion Treegen -->
+        <space1></space1>
+    </div>
+</body>
+</html>
