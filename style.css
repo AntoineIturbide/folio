@@ -91,12 +91,12 @@ line1 {
 }
 
     .falling_apart .project_logo {
-        background: url(logoFA.png) center;
+        background: url(pFallingAppart/logoFA.png) center;
         background-size: cover;
         transform:scale(1.2) translateX(36px);
     }
     .exaucer .project_logo {
-        background: url(logo_exaucer.png);
+        background: url(pExaucer/logo_exaucer.png);
     }
     .ohayo .project_logo {
         background: url(pOhayo/ohayo.png);
@@ -165,7 +165,7 @@ line1 {
     }
 
     .projectnote_container .info {
-        background: url("noteTitleBg.png") top left no-repeat, url("noteTitleBgShadow.png") top repeat-x, rgba(255,255,255,1); /*,  */
+        background: url("main/noteTitleBg.png") top left no-repeat, url("main/noteTitleBgShadow.png") top repeat-x, rgba(255,255,255,1); /*,  */
         min-height: 26px;
         position: relative;
     }
