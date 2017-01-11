@@ -1,0 +1,106 @@
+﻿    <!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="note.js"></script> 
+</head>
+<body>
+    <!-- EXAUCER -->
+    <div id="exit" style="position:fixed; width:100%; height:100%;"></div>
+    <!-- FALLING APART -->
+    <!-- Main -->
+    <div class="project_container">
+        <space1></space1>
+        <!-- Logo -->
+        <div class="project_logo" style="width: 736px; height: 256px; background-size:100%; background-position:50% 100%;">
+            <video data-id="content" data-type="content" autoplay="" controls loop src="https://video.twimg.com/tweet_video/CZcTt8CWEAAa8GP.mp4" type="video/mp4" style="width: 100%; height: 100%; pointer-events:none;" class="visible playing"></video>
+        </div>
+        <space1></space1>
+        <!-- Pitch -->
+        <div id="project_pitch">
+            A tile based 3D terrain editor.
+        </div>
+        <space1></space1>
+        <!-- Note -->
+        <div class="note_container">
+            <div class="projectnote_container">
+                <div class="info">
+                    <span class="name">
+                        Platform
+                    </span>
+                    <p class="content">
+                        Unity Editor<br />
+                    </p>
+                </div>
+                <space2></space2>
+                <div class="info">
+                    <span class="name">
+                        Tool used
+                    </span>
+                    <p class="content">
+                        Unity3D<br />
+                    </p>
+                </div>
+                <space2></space2>
+                <div class="info" style="padding-bottom:8px;">
+                    <span class="name">
+                        Context
+                    </span>
+                    <p class="content">
+                        <br />
+                    </p>
+                    <p class="content regular">
+                        I got inspired by Ocean Horn's terrain graphics and wanted to find out how they achieved it.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <line1></line1>
+        <space1></space1>
+        <!-- Climbing -->
+        <!-- #region Climbing -->
+        <table class="project_info" cellpadding="0" cellspacing="0">
+            <tr>
+                <td style="padding-right:16px;">
+                    <span class="t1">
+                        How it works.
+                    </span>
+                    <p>
+                        The terrain editor workds based on a height map.
+                        It convert it to a three dimentional voxel map before drawing the apropriate mesh at each voxel's position.
+                    </p>
+                </td>
+                <td class="media_holder" style="width:352px; background:url('wMeshGen/mesh.png') center center no-repeat; background-size:cover;"></td>
+            </tr>
+        </table>
+        <!-- #endregion Climbing -->
+        <space1></space1>
+        <!-- Tree Generation -->
+        <!-- #region Treegen -->
+        <table class="project_info" cellpadding="0" cellspacing="0">
+            <tr>
+                <td class="media_holder" style="width:352px; background:url('wMeshGen/mesh.png') center center no-repeat; background-size:cover;"></td>
+                <td style="padding-left:16px;">
+                    <span class="t1">
+                        Artist friendly.
+                    </span>
+                    <p>
+                        The editor uses meshes as base tile for the final terrain's construction.
+                    </p>
+                    <p>
+                        Meaning different type of terrain can easily be made in either Maya or 3ds Max by modeling each "tile" before importing it into Unity.
+                    </p>
+                    <p>
+                        I made a tri-planar maping shader so it's fast and easy to texture. Textur map can be big enough to break the feeling of repetition.
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <!-- #endregion Treegen -->
+        <space1></space1>
+    </div>
+</body>
+</html>
