@@ -205,6 +205,41 @@ line1 {
             padding: 8px 8px 0px 8px;
         }
 
+        
+/* PLAY / DOWNLOAD*/
+.play_button_holder{
+    text-align:center;
+    font-size:350%;
+    font-style:italic;
+    font-weight:800;
+    color:rgba(44, 44, 44, 1);
+    vertical-align:central;
+}
+.play_button {
+    border-radius:100%;
+    margin:auto;
+    padding : 16px;
+    display:inline-block;
+    background:white;
+    border:1px red;
+    text-align:center;
+    /*width:128px;*/
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 128px;
+    width:128px;
+    cursor:pointer;
+    transition:all 0.125s;
+}
+.play_button:hover {
+    transform:scale(2) rotate(360deg);
+    color:white;
+    background:rgba(44, 44, 44, 0);
+}
+
+
+
 @media screen and (max-width: 1696px) and (min-width: 1249px) {
     body {
     }
