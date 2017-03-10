@@ -13,15 +13,15 @@
     <!-- FALLING APART -->
     <!-- Main -->
     <div class="project_container">
-        <space1></space1>
-        <!-- Logo -->
-        <div class="project_logo" style="width: 736px; height: 256px; background-size:100%; background-position:50% 100%;">
-            <video data-id="content" data-type="content" autoplay="" controls loop src="https://video.twimg.com/tweet_video/CZcTt8CWEAAa8GP.mp4" type="video/mp4" style="width: 100%; height: 100%; pointer-events:none;" class="visible playing"></video>
+    <space1></space1>
+        <!-- Intro media -->
+        <div class="media_holder" style="width:736px; height:456px; margin-left:32px; margin-right:32px; background:url()">
+            <iframe width="736" height="456" src="https://www.youtube.com/embed/s5UvcWHlT98" frameborder="0" allowfullscreen></iframe>
         </div>
         <space1></space1>
         <!-- Pitch -->
         <div id="project_pitch">
-            A tile based 3D terrain editor.
+            A 2D side-scroller physics engine.
         </div>
         <space1></space1>
         <!-- Note -->
@@ -55,7 +55,7 @@
                         <br />
                     </p>
                     <p class="content regular">
-                        I wanted to program a game inspired by Castlevania, to do si I had to discover the making of a 2D physical engine.
+                        I wanted to program a game inspired by Castlevania, to do so I had to discover the making of a 2D physics engine.
                     </p>
                 </div>
             </div>
@@ -71,37 +71,19 @@
                         How it works.
                     </span>
                     <p>
-                        The terrain editor workds based on a height map.
-                        It convert it to a three dimentional voxel map before drawing the apropriate mesh at each voxel's position.
+                        Maps are created trough the Tiled Map Editor, then exported as XML files.
+                    </p>
+                    <p>
+                        The engine loads polygons and lines stored into the file and put them into RAM.
+                    </p>
+                    <p>
+                        It then uses those static shapes for raycasting as object moves in the level, allowing for fast movements.
                     </p>
                 </td>
-                <td class="media_holder" style="width:352px; background:url('wMeshGen/mesh.png') center center no-repeat; background-size:cover;"></td>
+                <td class="media_holder" style="width:352px; background:url('w2dPhysicsEngine/pic.png') bottom center no-repeat; background-size:cover;"></td>
             </tr>
         </table>
         <!-- #endregion Climbing -->
-        <space1></space1>
-        <!-- Tree Generation -->
-        <!-- #region Treegen -->
-        <table class="project_info" cellpadding="0" cellspacing="0">
-            <tr>
-                <td class="media_holder" style="width:352px; background:url('wMeshGen/mesh.png') center center no-repeat; background-size:cover;"></td>
-                <td style="padding-left:16px;">
-                    <span class="t1">
-                        Map easy to edit.
-                    </span>
-                    <p>
-                        The prgram could use map created trough
-                    </p>
-                    <p>
-                        Meaning different type of terrain can easily be made in either Maya or 3ds Max by modeling each "tile" before importing it into Unity.
-                    </p>
-                    <p>
-                        I made a tri-planar maping shader so it's fast and easy to texture. Textur map can be big enough to break the feeling of repetition.
-                    </p>
-                </td>
-            </tr>
-        </table>
-        <!-- #endregion Treegen -->
         <space1></space1>
     </div>
 </body>
