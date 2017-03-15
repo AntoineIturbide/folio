@@ -1,0 +1,90 @@
+﻿    <!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="note.js"></script> 
+</head>
+<body>
+    <!-- EXAUCER -->
+    <div id="exit" style="position:fixed; width:100%; height:100%;"></div>
+    <!-- FALLING APART -->
+    <!-- Main -->
+    <div class="project_container">
+    <space1></space1>
+        <!-- Intro media -->
+        <div class="media_holder" style="width:736px; height:456px; margin-left:32px; margin-right:32px; background:url()">
+            <iframe width="736" height="456" src="https://www.youtube.com/embed/s5UvcWHlT98" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <space1></space1>
+        <!-- Pitch -->
+        <div id="project_pitch">
+            A 2D side-scroller physics engine.
+        </div>
+        <space1></space1>
+        <!-- Note -->
+        <div class="note_container">
+            <div class="projectnote_container">
+                <div class="info">
+                    <span class="name">
+                        Language
+                    </span>
+                    <p class="content">
+                        C++<br />
+                    </p>
+                </div>
+                <space2></space2>
+                <div class="info">
+                    <span class="name">
+                        Tool used
+                    </span>
+                    <p class="content">
+                        CodeBlock<br />
+                        SDL<br />
+                        Tiled<br />
+                    </p>
+                </div>
+                <space2></space2>
+                <div class="info" style="padding-bottom:8px;">
+                    <span class="name">
+                        Context
+                    </span>
+                    <p class="content">
+                        <br />
+                    </p>
+                    <p class="content regular">
+                        I wanted to program a game inspired by Castlevania, to do so I had to discover the making of a 2D physics engine.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <line1></line1>
+        <space1></space1>
+        <!-- Climbing -->
+        <!-- #region Climbing -->
+        <table class="project_info" cellpadding="0" cellspacing="0">
+            <tr>
+                <td style="padding-right:16px;">
+                    <span class="t1">
+                        How it works.
+                    </span>
+                    <p>
+                        Maps are created trough the Tiled Map Editor, then exported as XML files.
+                    </p>
+                    <p>
+                        The engine loads polygons and lines stored into the file and put them into RAM.
+                    </p>
+                    <p>
+                        It then uses those static shapes for raycasting as object moves in the level, allowing for fast movements.
+                    </p>
+                </td>
+                <td class="media_holder" style="width:352px; background:url('w2dPhysicsEngine/pic.png') bottom center no-repeat; background-size:cover;"></td>
+            </tr>
+        </table>
+        <!-- #endregion Climbing -->
+        <space1></space1>
+    </div>
+</body>
+</html>

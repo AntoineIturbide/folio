@@ -1,11 +1,11 @@
-﻿    <!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
     <title></title>
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <script src="note.js"></script> 
+    <script src="note.js"></script>
 </head>
 <body>
     <!-- Ohayo -->
@@ -13,9 +13,10 @@
     <!-- FALLING APART -->
     <!-- Main -->
     <div class="project_container ohayo">
-        <space1></space1>
-        <!-- Logo -->
-        <div class="project_logo" style="width: 736px; height: 448px;"></div>
+        <space1></space1>        <!-- Intro media -->
+        <div class="media_holder" style="width:736px; height:456px; margin-left:32px; margin-right:32px; background:url(pOhayo/ohayo.png) no-repeat; background-size:cover">
+            <iframe width="736" height="456" src="https://www.youtube.com/embed/JX4fEnYkPRI" frameborder="0" allowfullscreen></iframe>
+        </div>
         <space1></space1>
         <!-- Pitch -->
         <div id="project_pitch">
@@ -23,9 +24,12 @@
         </div>
         <space1></space1>
         <div class="play_button_holder">
-            <div class="play_button">
-                Play
-            </div>
+            <a href="http://aliphen.github.io/GGJ2016/game.html" target="_blank">
+                <div class="play_button">
+                    Play
+                    <span style="font-size:25%; font-style:italic;">Please use headphones</span>
+                </div>
+            </a>
         </div>
         <space1></space1>
         <!-- Note -->
@@ -116,8 +120,7 @@
         <!-- #region Treegen -->
         <table class="project_info" cellpadding="0" cellspacing="0">
             <tr>
-                <td class="media_holder" style="width:352px; background:url('pOhayo/jam.jpg') center center no-repeat; background-size:cover;">
-                </td>
+                <td class="media_holder" style="width:352px; background:url('pOhayo/jam.jpg') center center no-repeat; background-size:cover;"></td>
                 <td style="padding-left:16px;">
                     <span class="t1">
                         Conception
@@ -142,7 +145,7 @@
                         My work
                     </span>
                     <p>
-                        I defined the Character, Controller, Camera of the game. 
+                        I defined the Character, Controller, Camera of the game.
                     </p>
                     <p>
                         Designing the character's AI was done alongside it's sings and feedbacks so the player could understand it's behaviour.
